@@ -1,11 +1,29 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <main-page></main-page>
+  </div>
 </template>
 
+<script lang="ts">
+import { defineComponent } from 'vue'
+import MainPage from './views/main-page.vue';
+
+export default defineComponent({
+    name:"App",
+    components:{
+      MainPage
+    },
+    setup () {
+        
+
+        return {}
+    }
+})
+</script>
+
+<style scoped>
+
+</style>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
